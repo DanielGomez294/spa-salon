@@ -18,6 +18,16 @@
     <script src="https://cdn.tailwindcss.com"></script>
 
 </head>
+<style>
+    .hidden {
+        display: none;
+    }
+
+    .show-all .card,
+    .show-4 .card:nth-child(-n+4) {
+        display: block;
+    }
+</style>
 
 <body class="font-body">
 
@@ -30,8 +40,9 @@
 
             <nav class="flex-wrap lg:flex items-center py-14 xl:relative z-10" x-data="{navbarOpen:false}">
 
-                <div class="flex items-center justify-between mb-10 lg:mb-0">
-                    <h1 class="w-52 md:w-80 lg:w-full text-2xl text-gray-700">olgagomezesthetic</h1>
+                <div class="flex items-center justify-between mb-10 lg:mb-0 ">
+                    <img class="w-32 h-32" src="assets/image/Logo Olga Estetica 2023 2 Tones_Mesa de trabajo 1.webp"
+                        alt="logo">
                     <button
                         class="lg:hidden w-10 h-10 ml-auto flex items-center justify-center text-green-700 border border-green-700 rounded-md"
                         @click="navbarOpen = !navbarOpen">
@@ -62,9 +73,9 @@
                 </ul>
 
                 <button
-                    class="px-5 py-3 lg:block border-2 border-green-700 rounded-lg font-semibold text-green-700 text-lg hover:bg-green-700 text-white transition ease-linear duration-500"
+                    class="px-5 py-3 lg:block border-2 border-green-700 rounded-lg font-semibold text-green-700 text-lg bg-green-700 text-white transition ease-linear duration-500"
                     :class="{'hidden':!navbarOpen,'flex':navbarOpen}">
-                    Request quote
+                    Contactar
                 </button>
 
             </nav>
@@ -98,113 +109,266 @@
         <div class="container max-w-screen-xl mx-auto px-4 ">
             <h2 class="font-semibold text-gray-900 text-xl md:text-4xl text-center leading-normal ">Servicios Ofrecidos
             </h2>
-            <div class=" grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-8 mt-6">
-                <!-- Tratamiento Reductor -->
-                <div
-                    class="max-w-sm bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700">
-                    <a href="#">
-                        <img class="rounded-t-lg" src="assets/image/reducotr-400.jpg"
-                            alt="Tratamiento Reductor Image" />
-                    </a>
-                    <div class="p-5">
-                        <a href="#">
-                            <h5 class="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white">Tratamiento
-                                Reductor</h5>
-                        </a>
-                        <p class="mb-3 font-normal text-gray-700 dark:text-gray-400">Logra la figura que deseas con
-                            nuestro
-                            Tratamiento Reductor.</p>
-                        <a href="#"
-                            class="inline-flex items-center px-3 py-2 text-sm font-medium text-center text-white bg-blue-700 rounded-lg hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">
-                            Conectar
-                            <svg class="rtl:rotate-180 w-3.5 h-3.5 ms-2" aria-hidden="true"
-                                xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 14 10">
-                                <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"
-                                    stroke-width="2" d="M1 5h12m0 0L9 1m4 4L9 9" />
-                            </svg>
-                        </a>
-                    </div>
-                </div>
-
-                <div
-                    class="max-w-sm bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700">
-                    <a href="#">
-                        <img class="rounded-t-lg" src="assets/image/reducotr-400.jpg"
-                            alt="Tratamiento Reductor Image" />
-                    </a>
-                    <div class="p-5">
-                        <a href="#">
-                            <h5 class="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white">Tratamiento
-                                Reductor</h5>
-                        </a>
-                        <p class="mb-3 font-normal text-gray-700 dark:text-gray-400">Logra la figura que deseas con
-                            nuestro
-                            Tratamiento Reductor.</p>
-                        <a href="#"
-                            class="inline-flex items-center px-3 py-2 text-sm font-medium text-center text-white bg-blue-700 rounded-lg hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">
-                            Conectar
-                            <svg class="rtl:rotate-180 w-3.5 h-3.5 ms-2" aria-hidden="true"
-                                xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 14 10">
-                                <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"
-                                    stroke-width="2" d="M1 5h12m0 0L9 1m4 4L9 9" />
-                            </svg>
-                        </a>
-                    </div>
-                </div>
-
-                <div
-                    class="max-w-sm bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700">
-                    <a href="#">
-                        <img class="rounded-t-lg" src="assets/image/reducotr-400.jpg"
-                            alt="Tratamiento Reductor Image" />
-                    </a>
-                    <div class="p-5">
-                        <a href="#">
-                            <h5 class="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white">Tratamiento
-                                Reductor</h5>
-                        </a>
-                        <p class="mb-3 font-normal text-gray-700 dark:text-gray-400">Logra la figura que deseas con
-                            nuestro
-                            Tratamiento Reductor.</p>
-                        <a href="#"
-                            class="inline-flex items-center px-3 py-2 text-sm font-medium text-center text-white bg-blue-700 rounded-lg hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">
-                            Conectar
-                            <svg class="rtl:rotate-180 w-3.5 h-3.5 ms-2" aria-hidden="true"
-                                xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 14 10">
-                                <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"
-                                    stroke-width="2" d="M1 5h12m0 0L9 1m4 4L9 9" />
-                            </svg>
-                        </a>
-                    </div>
-                </div>
-
-                <!-- Masaje Tailandes -->
-                <div
-                    class="max-w-sm bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700">
-                    <a href="#">
-                        <img class="rounded-t-lg" src="assets/image/masaje-tailandes-400.jpg"
-                            alt="Masaje Tailandes Image" />
-                    </a>
-                    <div class="p-5">
-                        <a href="#">
-                            <h5 class="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white">Masaje
-                                Tailandes</h5>
-                        </a>
-                        <p class="mb-3 font-normal text-gray-700 dark:text-gray-400">Disfruta de la relajación profunda
-                            con
-                            nuestro Masaje Tailandes.</p>
-                        <a href="#"
-                            class="inline-flex items-center px-3 py-2 text-sm font-medium text-center text-white bg-blue-700 rounded-lg hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">
-                            Conectar
-                            <svg class="rtl:rotate-180 w-3.5 h-3.5 ms-2" aria-hidden="true"
-                                xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 14 10">
-                                <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"
-                                    stroke-width="2" d="M1 5h12m0 0L9 1m4 4L9 9" />
-                            </svg>
-                        </a>
-                    </div>
-                </div>
+            <div class=" flex justify-center items-center gap-4 mt-6">
+                <button class="bg-[#E29368] text-xl font-normal p-3 w-52 rounded-lg text-white"
+                    id="showSet1">Faciales</button>
+                <button class="bg-green-600 text-xl font-normal p-3 w-52 rounded-lg text-white"
+                    id="showSet2">Corporales</button>
             </div>
+            <!-- ====== Cards Section Start -->
+            <section class="bg-gray-2 dark:bg-dark pt-20 pb-10 lg:pt-[80px] lg:pb-20">
+                <div class="container mx-auto">
+                    <div class="flex flex-wrap mx-4  " id="cardContainer">
+                        <div class="w-full px-4 md:w-1/2 xl:w-1/3 ">
+                            <div
+                                class="mb-10 overflow-hidden duration-300 bg-white rounded-lg dark:bg-dark-2 shadow-1 hover:shadow-3 dark:shadow-card dark:hover:shadow-3">
+                                <img src="https://cdn.tailgrids.com/2.0/image/application/images/cards/card-01/image-01.jpg"
+                                    alt="image" class="w-full" />
+                                <div class="p-8 text-center sm:p-9 md:p-7 xl:p-9">
+                                    <h3>
+                                        <a href="javascript:void(0)"
+                                            class="text-dark dark:text-white hover:text-primary mb-4 block text-xl font-semibold sm:text-[22px] md:text-xl lg:text-[22px] xl:text-xl 2xl:text-[22px]">
+                                            Tratamiento Reductor
+                                        </a>
+                                    </h3>
+                                    <p class="text-base leading-relaxed text-body-color dark:text-dark-6 mb-7">
+                                        Descubre nuestra variedad de tratamientos reductores diseñados para ayudarte a
+                                        alcanzar tus objetivos de bienestar y belleza.
+                                    </p>
+                                    <a href="javascript:void(0)"
+                                        class="inline-block py-2 text-base font-medium transition border rounded-full text-body-color hover:border-primary hover:bg-primary border-gray-3 px-7 hover:text-white dark:border-dark-3 dark:text-dark-6">
+                                        Contactar
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Tarjeta 2 -->
+                        <div class="w-full px-4 md:w-1/2 xl:w-1/3">
+                            <div
+                                class="mb-10 overflow-hidden duration-300 bg-white rounded-lg dark:bg-dark-2 shadow-1 hover:shadow-3 dark:shadow-card dark:hover:shadow-3">
+                                <img src="https://cdn.tailgrids.com/2.0/image/application/images/cards/card-01/image-02.jpg"
+                                    alt="image" class="w-full" />
+                                <div class="p-8 text-center sm:p-9 md:p-7 xl:p-9">
+                                    <h3>
+                                        <a href="javascript:void(0)"
+                                            class="text-dark dark:text-white hover:text-primary mb-4 block text-xl font-semibold sm:text-[22px] md:text-xl lg:text-[22px] xl:text-xl 2xl:text-[22px]">
+                                            Masaje Relajantes
+                                        </a>
+                                    </h3>
+                                    <p class="text-base leading-relaxed text-body-color mb-7">
+                                        Disfruta de nuestros masajes relajantes diseñados para liberar el estrés y
+                                        proporcionar una sensación de tranquilidad y bienestar.
+                                    </p>
+                                    <a href="javascript:void(0)"
+                                        class="inline-block py-2 text-base font-medium transition border rounded-full text-body-color hover:border-primary hover:bg-primary border-gray-3 px-7 hover:text-white dark:border-dark-3 dark:text-dark-6">
+                                        Contactar
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Tarjeta 3 -->
+                        <div class="w-full px-4 md:w-1/2 xl:w-1/3">
+                            <div
+                                class="mb-10 overflow-hidden duration-300 bg-white rounded-lg dark:bg-dark-2 shadow-1 hover:shadow-3 dark:shadow-card dark:hover:shadow-3">
+                                <img src="https://cdn.tailgrids.com/2.0/image/application/images/cards/card-01/image-03.jpg"
+                                    alt="image" class="w-full" />
+                                <div class="p-8 text-center sm:p-9 md:p-7 xl:p-9">
+                                    <h3>
+                                        <a href="javascript:void(0)"
+                                            class="text-dark dark:text-white hover:text-primary mb-4 block text-xl font-semibold sm:text-[22px] md:text-xl lg:text-[22px] xl:text-xl 2xl:text-[22px]">
+                                            Masaje Deportivos
+                                        </a>
+                                    </h3>
+                                    <p class="text-base leading-relaxed text-body-color mb-7">
+                                        Descubre nuestros masajes deportivos diseñados para mejorar el rendimiento y
+                                        acelerar la recuperación muscular.
+                                    </p>
+                                    <a href="javascript:void(0)"
+                                        class="inline-block py-2 text-base font-medium transition border rounded-full text-body-color hover:border-primary hover:bg-primary border-gray-3 px-7 hover:text-white dark:border-dark-3 dark:text-dark-6">
+                                        Contactar
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Tarjeta 4 -->
+                        <div class="w-full px-4 md:w-1/2 xl:w-1/3">
+                            <div
+                                class="mb-10 overflow-hidden duration-300 bg-white rounded-lg dark:bg-dark-2 shadow-1 hover:shadow-3 dark:shadow-card dark:hover:shadow-3">
+                                <img src="https://cdn.tailgrids.com/2.0/image/application/images/cards/card-01/image-03.jpg"
+                                    alt="image" class="w-full" />
+                                <div class="p-8 text-center sm:p-9 md:p-7 xl:p-9">
+                                    <h3>
+                                        <a href="javascript:void(0)"
+                                            class="text-dark dark:text-white hover:text-primary mb-4 block text-xl font-semibold sm:text-[22px] md:text-xl lg:text-[22px] xl:text-xl 2xl:text-[22px]">
+                                            Masaje Tailandes
+                                        </a>
+                                    </h3>
+                                    <p class="text-base leading-relaxed text-body-color mb-7">
+                                        Sumérgete en la experiencia única de nuestros masajes tailandeses que combinan
+                                        técnicas ancestrales para promover el equilibrio y bienestar.
+                                    </p>
+                                    <a href="javascript:void(0)"
+                                        class="inline-block py-2 text-base font-medium transition border rounded-full text-body-color hover:border-primary hover:bg-primary border-gray-3 px-7 hover:text-white dark:border-dark-3 dark:text-dark-6">
+                                        Contactar
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Tarjeta 5 -->
+                        <div class="w-full px-4 md:w-1/2 xl:w-1/3">
+                            <div
+                                class="mb-10 overflow-hidden duration-300 bg-white rounded-lg dark:bg-dark-2 shadow-1 hover:shadow-3 dark:shadow-card dark:hover:shadow-3">
+                                <img src="https://cdn.tailgrids.com/2.0/image/application/images/cards/card-01/image-03.jpg"
+                                    alt="image" class="w-full" />
+                                <div class="p-8 text-center sm:p-9 md:p-7 xl:p-9">
+                                    <h3>
+                                        <a href="javascript:void(0)"
+                                            class="text-dark dark:text-white hover:text-primary mb-4 block text-xl font-semibold sm:text-[22px] md:text-xl lg:text-[22px] xl:text-xl 2xl:text-[22px]">
+                                            Masaje Prenatal
+                                        </a>
+                                    </h3>
+                                    <p class="text-base leading-relaxed text-body-color mb-7">
+                                        Experimenta la serenidad y cuidado especial con nuestros masajes prenatales
+                                        diseñados para embarazadas, enfocados en tu comodidad y bienestar.
+                                    </p>
+                                    <a href="javascript:void(0)"
+                                        class="inline-block py-2 text-base font-medium transition border rounded-full text-body-color hover:border-primary hover:bg-primary border-gray-3 px-7 hover:text-white dark:border-dark-3 dark:text-dark-6">
+                                        Contactar
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="w-full px-4 md:w-1/2 xl:w-1/3">
+                            <div
+                                class="mb-10 overflow-hidden duration-300 bg-white rounded-lg dark:bg-dark-2 shadow-1 hover:shadow-3 dark:shadow-card dark:hover:shadow-3">
+                                <img src="https://cdn.tailgrids.com/2.0/image/application/images/cards/card-01/image-03.jpg"
+                                    alt="image" class="w-full" />
+                                <div class="p-8 text-center sm:p-9 md:p-7 xl:p-9">
+                                    <h3>
+                                        <a href="javascript:void(0)"
+                                            class="text-dark dark:text-white hover:text-primary mb-4 block text-xl font-semibold sm:text-[22px] md:text-xl lg:text-[22px] xl:text-xl 2xl:text-[22px]">
+                                            Anti Envejecimiento
+                                        </a>
+                                    </h3>
+                                    <p class="text-base leading-relaxed text-body-color mb-7">
+                                        Descubre nuestros tratamientos anti envejecimiento diseñados para rejuvenecer y
+                                        revitalizar tu piel.
+                                    </p>
+                                    <a href="javascript:void(0)"
+                                        class="inline-block py-2 text-base font-medium transition border rounded-full text-body-color hover:border-primary hover:bg-primary border-gray-3 px-7 hover:text-white dark:border-dark-3 dark:text-dark-6">
+                                        Contactar
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Tarjeta 7 -->
+                        <div class="w-full px-4 md:w-1/2 xl:w-1/3">
+                            <div
+                                class="mb-10 overflow-hidden duration-300 bg-white rounded-lg dark:bg-dark-2 shadow-1 hover:shadow-3 dark:shadow-card dark:hover:shadow-3">
+                                <img src="https://cdn.tailgrids.com/2.0/image/application/images/cards/card-01/image-03.jpg"
+                                    alt="image" class="w-full" />
+                                <div class="p-8 text-center sm:p-9 md:p-7 xl:p-9">
+                                    <h3>
+                                        <a href="javascript:void(0)"
+                                            class="text-dark dark:text-white hover:text-primary mb-4 block text-xl font-semibold sm:text-[22px] md:text-xl lg:text-[22px] xl:text-xl 2xl:text-[22px]">
+                                            Microdemoabracion
+                                        </a>
+                                    </h3>
+                                    <p class="text-base leading-relaxed text-body-color mb-7">
+                                        Experimenta los beneficios de la microdermoabrasión para lograr una piel más
+                                        suave y radiante.
+                                    </p>
+                                    <a href="javascript:void(0)"
+                                        class="inline-block py-2 text-base font-medium transition border rounded-full text-body-color hover:border-primary hover:bg-primary border-gray-3 px-7 hover:text-white dark:border-dark-3 dark:text-dark-6">
+                                        Contactar
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Tarjeta 8 -->
+                        <div class="w-full px-4 md:w-1/2 xl:w-1/3">
+                            <div
+                                class="mb-10 overflow-hidden duration-300 bg-white rounded-lg dark:bg-dark-2 shadow-1 hover:shadow-3 dark:shadow-card dark:hover:shadow-3">
+                                <img src="https://cdn.tailgrids.com/2.0/image/application/images/cards/card-01/image-03.jpg"
+                                    alt="image" class="w-full" />
+                                <div class="p-8 text-center sm:p-9 md:p-7 xl:p-9">
+                                    <h3>
+                                        <a href="javascript:void(0)"
+                                            class="text-dark dark:text-white hover:text-primary mb-4 block text-xl font-semibold sm:text-[22px] md:text-xl lg:text-[22px] xl:text-xl 2xl:text-[22px]">
+                                            Hidratacion Facial
+                                        </a>
+                                    </h3>
+                                    <p class="text-base leading-relaxed text-body-color mb-7">
+                                        Revitaliza tu piel con nuestros tratamientos de hidratación facial para
+                                        mantenerla fresca y radiante.
+                                    </p>
+                                    <a href="javascript:void(0)"
+                                        class="inline-block py-2 text-base font-medium transition border rounded-full text-body-color hover:border-primary hover:bg-primary border-gray-3 px-7 hover:text-white dark:border-dark-3 dark:text-dark-6">
+                                        Contactar
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Tarjeta 9 -->
+                        <div class="w-full px-4 md:w-1/2 xl:w-1/3">
+                            <div
+                                class="mb-10 overflow-hidden duration-300 bg-white rounded-lg dark:bg-dark-2 shadow-1 hover:shadow-3 dark:shadow-card dark:hover:shadow-3">
+                                <img src="https://cdn.tailgrids.com/2.0/image/application/images/cards/card-01/image-03.jpg"
+                                    alt="image" class="w-full" />
+                                <div class="p-8 text-center sm:p-9 md:p-7 xl:p-9">
+                                    <h3>
+                                        <a href="javascript:void(0)"
+                                            class="text-dark dark:text-white hover:text-primary mb-4 block text-xl font-semibold sm:text-[22px] md:text-xl lg:text-[22px] xl:text-xl 2xl:text-[22px]">
+                                            Limpieza Facial
+                                        </a>
+                                    </h3>
+                                    <p class="text-base leading-relaxed text-body-color mb-7">
+                                        Disfruta de una piel limpia y fresca con nuestros tratamientos especializados de
+                                        limpieza facial.
+                                    </p>
+                                    <a href="javascript:void(0)"
+                                        class="inline-block py-2 text-base font-medium transition border rounded-full text-body-color hover:border-primary hover:bg-primary border-gray-3 px-7 hover:text-white dark:border-dark-3 dark:text-dark-6">
+                                        Contactar
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Tarjeta 10 -->
+                        <div class="w-full px-4 md:w-1/2 xl:w-1/3">
+                            <div
+                                class="mb-10 overflow-hidden duration-300 bg-white rounded-lg dark:bg-dark-2 shadow-1 hover:shadow-3 dark:shadow-card dark:hover:shadow-3">
+                                <img src="https://cdn.tailgrids.com/2.0/image/application/images/cards/card-01/image-03.jpg"
+                                    alt="image" class="w-full" />
+                                <div class="p-8 text-center sm:p-9 md:p-7 xl:p-9">
+                                    <h3>
+                                        <a href="javascript:void(0)"
+                                            class="text-dark dark:text-white hover:text-primary mb-4 block text-xl font-semibold sm:text-[22px] md:text-xl lg:text-[22px] xl:text-xl 2xl:text-[22px]">
+                                            Velo de Colageno
+                                        </a>
+                                    </h3>
+                                    <p class="text-base leading-relaxed text-body-color mb-7">
+                                        Descubre los beneficios del velo de colágeno para una piel más firme y
+                                        rejuvenecida.
+                                    </p>
+                                    <a href="javascript:void(0)"
+                                        class="inline-block py-2 text-base font-medium transition border rounded-full text-body-color hover:border-primary hover:bg-primary border-gray-3 px-7 hover:text-white dark:border-dark-3 dark:text-dark-6">
+                                        Contactar
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <!-- ====== Cards Section End -->
 
         </div>
     </section>
@@ -218,18 +382,18 @@
             <div class="flex flex-col xl:flex-row justify-end">
 
                 <div class="hidden xl:block xl:absolute left-0 bottom-0 w-full">
-                    <img src="assets/image/feature-img.png" alt="Feature img">
+                    <img src="assets/image/f.jpg" alt="Feature img">
                 </div>
 
                 <div class="">
 
-                    <h1 class="font-semibold text-gray-900 text-xl md:text-4xl text-center leading-normal mb-6">Precios
-                        y Tarifas
+                    <h1 class="font-semibold text-gray-900 text-xl md:text-4xl text-center leading-normal mb-6">
+                        Relajación Exclusiva<br> Variedad de Masajes y Spa</h1>
 
-                    </h1>
+                    <p class="font-normal text-gray-400 text-md md:text-xl text-center mb-16">Ofrecemos
+                        una variedad de masajes y experiencias de spa para ti <br> Tú eliges el modelo de
+                        relajación que prefieras.</p>
 
-                    <p class="font-normal text-gray-400 text-md md:text-xl text-center mb-16">We provide a wide of
-                        selection of home types for you and your <br> family and are free to choose a home model</p>
 
                     <div class="flex flex-col md:flex-row justify-center xl:justify-start space-x-4 mb-20">
                         <div
@@ -238,12 +402,9 @@
                         </div>
 
                         <div class="text-center md:text-left">
-                            <h4 class="font-semibold text-gray-900 text-2xl mb-2">Horario de Atención
-                            </h4>
-                            <p class="font-normal text-gray-400 text-xl leading-relaxed"> - Lunes a Sabado 9:00am -
-                                9:00pm
-                                <br> from D’house
-                            </p>
+                            <h4 class="font-semibold text-gray-900 text-2xl mb-2">Garantía de Bienestar</h4>
+                            <p class="font-normal text-gray-400 text-xl leading-relaxed">Garantizamos la calidad de tus
+                                experiencias de <br> masajes y spa elegidas en D’house.</p>
                         </div>
                     </div>
 
@@ -254,9 +415,10 @@
                         </div>
 
                         <div class="text-center md:text-left">
-                            <h4 class="font-semibold text-gray-900 text-2xl mb-2">Ubicacíon</h4>
-                            <p class="font-normal text-gray-400 text-xl leading-relaxed">Miami beach <br>
-                            </p>
+
+                            <h4 class="font-semibold text-gray-900 text-2xl mb-2">Transacciones Seguras</h4>
+                            <p class="font-normal text-gray-400 text-xl leading-relaxed">Tus transacciones siempre se
+                                mantendrán <br> confidenciales y recibirás descuentos exclusivos.</p>
                         </div>
                     </div>
 
@@ -267,19 +429,20 @@
                         </div>
 
                         <div class="text-center md:text-left">
-                            <h4 class="font-semibold text-gray-900 text-2xl mb-2">Política de Pagos</h4>
-                            <p class="font-normal text-gray-400 text-xl leading-relaxed">BAgradecemos realizar los pagos
-                                directamente en nuestro establecimiento.<br> discount</p>
+
+                            <h4 class="font-semibold text-gray-900 text-2xl mb-2">Promoción Especial en Nuestro Spa</h4>
+                            <p class="font-normal text-gray-400 text-xl leading-relaxed">Al elegirnos, obtén
+                                descuentos exclusivos <br> para tu experiencia de spa.</p>
                         </div>
+
                     </div>
 
                 </div>
 
-            </div>
-
-        </div> <!-- container.// -->
+            </div> <!-- container.// -->
 
     </section>
+    <!-- feature section //end -->
     <!-- feature section //end -->
 
     <!-- gallery section -->
@@ -548,14 +711,14 @@
     <div class="group fixed bottom-8 right-8 p-2  flex items-end justify-end w-24 h-24 ">
         <!-- main -->
         <div
-            class="text-white border   shadow-xl flex items-center justify-center p-3 rounded-full bg-white  z-50 absolute  ">
-            <!-- <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
-                stroke="currentColor" class="w-6 h-6 group-hover:rotate-90 transition  transition-all duration-[0.6s]">
+            class="text-white border   shadow-xl flex items-center justify-center p-3 rounded-full bg-green-400  z-50 absolute  ">
+            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+                stroke="currentColor"
+                class="w-10 h-10 group-hover:rotate-90 transition  transition-all duration-[0.6s]">
                 <path stroke-linecap="round" stroke-linejoin="round"
                     d="M9.594 3.94c.09-.542.56-.94 1.11-.94h2.593c.55 0 1.02.398 1.11.94l.213 1.281c.063.374.313.686.645.87.074.04.147.083.22.127.324.196.72.257 1.075.124l1.217-.456a1.125 1.125 0 011.37.49l1.296 2.247a1.125 1.125 0 01-.26 1.431l-1.003.827c-.293.24-.438.613-.431.992a6.759 6.759 0 010 .255c-.007.378.138.75.43.99l1.005.828c.424.35.534.954.26 1.43l-1.298 2.247a1.125 1.125 0 01-1.369.491l-1.217-.456c-.355-.133-.75-.072-1.076.124a6.57 6.57 0 01-.22.128c-.331.183-.581.495-.644.869l-.213 1.28c-.09.543-.56.941-1.11.941h-2.594c-.55 0-1.02-.398-1.11-.94l-.213-1.281c-.062-.374-.312-.686-.644-.87a6.52 6.52 0 01-.22-.127c-.325-.196-.72-.257-1.076-.124l-1.217.456a1.125 1.125 0 01-1.369-.49l-1.297-2.247a1.125 1.125 0 01.26-1.431l1.004-.827c.292-.24.437-.613.43-.992a6.932 6.932 0 010-.255c.007-.378-.138-.75-.43-.99l-1.004-.828a1.125 1.125 0 01-.26-1.43l1.297-2.247a1.125 1.125 0 011.37-.491l1.216.456c.356.133.751.072 1.076-.124.072-.044.146-.087.22-.128.332-.183.582-.495.644-.869l.214-1.281z" />
                 <path stroke-linecap="round" stroke-linejoin="round" d="M15 12a3 3 0 11-6 0 3 3 0 016 0z" />
-            </svg> -->
-            <img class="w-10 h-10  transition  transition-all duration-[0.6s]" src="assets/image/comments.svg" alt="">
+            </svg>
         </div>
         <!-- sub left -->
         <div
@@ -656,6 +819,38 @@
     </div>
     <script>
         feather.replace()
+        document.addEventListener("DOMContentLoaded", function () {
+            // Select buttons and card container
+            const showSet1Button = document.getElementById("showSet1");
+            const showSet2Button = document.getElementById("showSet2");
+            const cardContainer = document.getElementById("cardContainer");
+
+            // Define card sets
+            const set1 = document.querySelectorAll('.w-full.px-4.md\\:w-1\\/2.xl\\:w-1\\/3:nth-child(-n+5)');
+            const set2 = document.querySelectorAll('.w-full.px-4.md\\:w-1\\/2.xl\\:w-1\\/3:nth-child(n+6):nth-child(-n+10)');
+
+            // Initial state: Show Set 1, hide Set 2
+            setVisibility(set1, true);
+            setVisibility(set2, false);
+
+            // Add click event listeners to buttons
+            showSet1Button.addEventListener("click", function () {
+                setVisibility(set1, true);
+                setVisibility(set2, false);
+            });
+
+            showSet2Button.addEventListener("click", function () {
+                setVisibility(set1, false);
+                setVisibility(set2, true);
+            });
+
+            // Function to toggle visibility of elements in a set
+            function setVisibility(set, isVisible) {
+                set.forEach(element => {
+                    element.style.display = isVisible ? "block" : "none";
+                });
+            }
+        });
     </script>
 
 </body>
